@@ -1,0 +1,30 @@
+/*Thinner scrollbar*/
+::-webkit-scrollbar {
+	height: 6px !important;
+	width: 0px !important;
+	background-color: transparent;
+}
+
+/*Hide some annoying elements like profile name and pic, upgrade button and device connect bar at bottom, new playlist button*/
+.profile.content-top-bar__profile-link,
+.upgrade-button,
+.view-player .remote-playback-bar,
+.NewPlaylistButton {
+display: none !important;
+}
+
+/*Round corner cover image*/
+.card-image,
+.card-placeholder-wrapper,
+.card-image-content-wrapper,
+.Card:not(.Card--artist) .Card__image,
+.Card:not(.Card--artist) .Card__image-wrapper {
+border-radius: 10px !important;
+overflow: hidden !important;
+}
+
+  /* Add round corner for Gerne and Mood cards */
+.gc-image-container,
+.gc-image {
+border-radius: 10px !important;
+}
